@@ -1,0 +1,30 @@
+name: sign_in_with_apple
+description: Flutter bridge to initiate Sign in with Apple (currently iOS and macOS only). Includes support for keychain entries as well as signing in with an Apple ID.
+version: 1.1.1
+homepage: https://github.com/aboutyou/dart_packages/tree/master/packages/sign_in_with_apple
+repository: https://github.com/aboutyou/dart_packages
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+  flutter: ">=1.12.13+hotfix.8 <2.0.0"
+
+dependencies:
+  meta: ^1.0.0
+
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: de.aboutyou.mobile.app.sign_in_with_apple
+        pluginClass: SignInWithApplePlugin
+      ios:
+        pluginClass: SignInWithApplePlugin
+      macos:
+        pluginClass: SignInWithApplePlugin

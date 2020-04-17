@@ -1,0 +1,27 @@
+name: sign_in_with_apple_example
+description: Demonstrates how to use the sign_in_with_apple plugin.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+  # For macOS make sure you're on Flutter master or dev channel and
+  # that `flutter config` shows `enable-macos-desktop: true`
+  flutter: ">=1.12.13+hotfix.8 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  sign_in_with_apple:
+    path: ../
+
+flutter:
+  uses-material-design: true
